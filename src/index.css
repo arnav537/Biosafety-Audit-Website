@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-50 text-gray-900 font-sans dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300;
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/80 backdrop-blur-xl border border-white/40 shadow-xl shadow-slate-200/50 
+           dark:bg-slate-900/80 dark:border-slate-800/60 dark:shadow-slate-950/50;
+  }
+
+  .glass {
+    @apply bg-white/70 backdrop-blur-lg 
+           dark:bg-slate-950/70 dark:border-slate-800;
+  }
+}
